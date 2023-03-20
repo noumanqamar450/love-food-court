@@ -1,0 +1,525 @@
+:root {
+  --primaryColor : #0d6efd;
+  --dangerColor : #dc3545 ;
+  --successColor : #198754;
+  --elementBG:rgb(43, 38, 68);
+  --bodyBG: rgb(28, 25, 44);
+  --overlay: rgb(0, 0, 0, 0.7);
+  --paraColor: rgb(180, 180, 180);
+}
+
+body {
+  background: var(--bodyBG) !important;
+  overflow-x: hidden;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+#offcanvasNavbarLabel-expand-lg .canvas-logo,
+.navbar .logo {
+  width: 140px;
+}
+
+
+.navbar-left .custom-btn {
+  padding: 10px 10px;
+  margin: 0px 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navbar-left .custom-btn:hover {
+  opacity: 0.8;
+}
+
+button.navbar-toggler {
+  order: 1;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
+  background: var(--elementBG) !important;
+}
+
+
+/* Mini Cart */
+
+.mini-cart-overlay {
+  width: 100%;
+  height: 100vh;
+  background: var(--overlay);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+
+.mini-cart-overlay.active {
+  display: block;
+}
+
+.mini-cart {
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  background: var(--elementBG);
+  top: 0px;
+  right: -105%;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.8s;
+}
+
+.mini-cart.active {
+  right: 0px;
+}
+
+.mini-cart .mini-cart-title {
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+}
+
+.mini-cart .view-cart-btn {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  padding: 20px;
+  bottom: 0px;
+}
+
+.mini-cart .view-cart-btn hr {
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mini-cart .view-cart-btn button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.mini-cart .mini-cart-x {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.5s;
+}
+.mini-cart .mini-cart-x:hover {
+  opacity: 0.8;
+}
+
+/* Search BAr */
+
+.search-overlay {
+  width: 100%;
+  height: 100vh;
+  background: var(--overlay);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  display: none;
+  transition: 0.8s;
+}
+
+.search-overlay.active {
+  display: block;
+}
+
+.search-bar {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: none;
+  transition: 0.8s;
+}
+
+.search-bar.active {
+  display: flex;
+}
+
+.search-bar .search-bar-setting {
+  width: 800px;
+}
+
+.search-bar .search-bar-x {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-bar .search-bar-x:hover {
+  opacity: 0.8;
+}
+
+/* Hero Banner */
+
+.hero-slider {
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.hero-slider .slider-image {
+  width: 100%;
+}
+
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+  color: var(--primaryColor) !important;
+}
+
+.hero-slider .swiper-pagination-progressbar-fill {
+  background: var(--primaryColor) !important;
+}
+
+/* Semi Banner */
+
+.semi-banner {
+  margin-top: 30px ;
+}
+
+.semi-banner .banner {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 250px;
+  position: relative;
+}
+
+.semi-banner .banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.semi-banner .banner:hover img {
+  transform: scale(1.1) rotate(2deg);
+  opacity: 0.8;
+}
+
+/* Food Area */
+.food-area {
+  margin-top: 30px;
+}
+
+/* Product Category */
+
+.pro-cate {
+  margin: 50px 0px;
+}
+
+.pro-cate .cate-title {
+  color: #fff;
+  width: 100%;
+}
+
+.pro-cate .cate-title h1 {
+  color: #fff;
+  font-size: 26px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.pro-cate .cate-title h1::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--elementBG);
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: -14px;
+}
+
+/* Product Cards */
+
+.pro-card {
+  width: 100%;
+  background: var(--elementBG);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px 0px;
+  cursor: pointer;
+}
+
+.pro-card .image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pro-card .image img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.pro-card:hover .image img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.pro-card .content {
+  padding: 10px 0px;
+  color: #fff;
+}
+
+.pro-card .content h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pro-card .content p {
+  color: var(--paraColor);
+  margin: 0px;
+}
+
+.pro-card .price {
+  color: #fff;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.pro-card .price .qty {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  align-items: center;
+  justify-self: end;
+}
+
+.pro-card .price .qty svg {
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--successColor);
+  transition: 0.5;
+}
+
+.pro-card .price .qty svg:hover {
+  opacity: 0.8;
+}
+
+.pro-card .price .qty h6 {
+  margin: 0px;
+  padding: 0px;
+  line-height: 0;
+}
+
+/* Brands Logo */
+
+.brand-logos {
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+
+.brand-logos .title {
+  color: #fff;
+  position: relative;
+  font-size: 26px;
+  margin-left: 15px;
+}
+
+
+.brand-logos h1.title::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--elementBG);
+  position: absolute;
+  z-index: -1;
+  top: -3px;
+  left: -14px;
+}
+
+.brand-logos hr {
+  color: #fff;
+}
+
+.brands .swiper-slide {
+  background: #fff;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.brands .swiper-slide:hover {
+  opacity: 0.8;
+}
+
+.brands .swiper-slide .brand-image {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.brands .swiper-slide:hover .brand-image {
+  transform: scale(1.1) rotate(2deg);
+}
+
+.swiper {
+  margin-top: 30px;
+}
+
+/* Footer Top */
+
+.footer-top {
+  padding: 10px 20px;
+  border-right: 1px solid var(--elementBG);
+}
+
+.footer-top.last {
+  border: none;
+}
+
+.footer-top h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-top p {
+  color: var(--paraColor);
+}
+
+/* Footer Main */
+
+.footer .main-footer {
+  padding: 50px 0px;
+  background: var(--elementBG);
+  padding-bottom: 30px;
+}
+
+.footer .about-col {
+  padding: 20px;
+}
+
+.footer .about-col .footer-logo {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.footer .about-col p {
+  padding: 20px 0px;
+  color: var(--paraColor);
+}
+
+.footer .footer-menu {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-menu ul li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.footer .footer-menu ul li a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--paraColor);
+  transition: 0.5s;
+}
+
+.footer .footer-menu ul li:hover a {
+  color: #fff;
+}
+
+.footer .footer-news-letter h2 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footer .footer-news-letter img {
+  width: 100%;
+}
+
+.footer .footer-news-letter .app-downloader {
+  margin: 40px 0px;
+}
+
+.footer .footer-news-letter .footer-social-icon ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer .footer-news-letter .footer-social-icon ul li a{
+  margin: 40px 0px;
+  text-decoration:  none;
+  color: #fff;
+  background: var(--bodyBG);
+  padding: 12px 15px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.footer .footer-news-letter .footer-social-icon ul li:hover a {
+  opacity: 0.8;
+}
+
+.footer .copy-right {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer hr {
+  color: rgb(82, 82, 82);
+  margin-top: 30px;
+}
+
+@media screen and (max-width:992px) {
+  .semi-banner .banner {
+    height: 150px;
+  }
+  .footer-top {
+    border: none;
+    color: var(--elementBG);
+    border-bottom: 1px solid;
+  }
+}
+
+@media screen and (max-width:640px) {
+  #offcanvasNavbarLabel-expand-lg .canvas-logo,
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .hero-slider .swiper-button-next,
+  .hero-slider .swiper-button-prev {
+    display: none;
+  }
+
+  .semi-banner {
+    display: none;
+  }
+}
