@@ -538,11 +538,16 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
 
   .pro-card { 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
   }
 
   .pro-card .body {
     padding: 0px 15px;
+  }
+
+  .pro-card img {
+    height: 100%;
+    width: auto;
   }
 
   .pro-card .content .for-all {
