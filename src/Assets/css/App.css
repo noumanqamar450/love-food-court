@@ -514,6 +514,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
 }
 
 @media screen and (max-width:640px) {
+  .mini-cart {
+    width: 100%;
+  }
+
   #offcanvasNavbarLabel-expand-lg .canvas-logo,
   .navbar .logo {
     width: 120px;
