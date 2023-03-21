@@ -551,6 +551,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
     width: 200px;
   }
 
+  .pro-card h2 {
+    font-size: 18px;
+  }
+
   .pro-card h5 {
     position: absolute;
     top: 10px;
@@ -558,7 +562,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
     background: var(--successColor);
     padding: 6px 8px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .pro-card .content .for-all {
