@@ -10,6 +10,9 @@ function Header() {
     const [searchBar, setSearchBar] = useState(false);
     
     const closeMiniCart = useCallback(()=>{
+        setTimeout(()=>{
+            document.getElementsByClassName('mini-cart')[0].style.display = ''
+        }, 500)
         setMiniCart(false)
     }, [])
 
@@ -55,7 +58,12 @@ function Header() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
                 <div className='navbar-left'>
-                    <div className='custom-btn' onClick={() => { setMiniCart(true) }}><Cart /> <Badge>0</Badge> </div>
+                    <div className='custom-btn' onClick={() => { 
+                        setTimeout(() => {
+                            setMiniCart(true)
+                        }, 200)
+                        document.getElementsByClassName('mini-cart')[0].style.display = 'block'
+                        }}><Cart /> <Badge>0</Badge> </div>
                     <div className='custom-btn' onClick={() => { setSearchBar(true) }}><Search /></div>
                 </div>
             </Container>

@@ -8,9 +8,13 @@
   --paraColor: rgb(180, 180, 180);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  overflow-x: hidden !important;
   background: var(--bodyBG) !important;
-  overflow-x: hidden;
 }
 
 .navbar-left {
@@ -60,6 +64,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
 }
 
 .mini-cart {
+  display: none;
   width: 400px;
   height: 100vh;
   position: absolute;
