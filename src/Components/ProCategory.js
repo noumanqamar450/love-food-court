@@ -13,7 +13,7 @@ const ProCategory = (props) => {
             <Row>
                 {
                     Products.filter(p => p.category === props.id).map(p => (
-                        <Col lg={3} md={4} xs={6} key={p.id}>
+                        <Col lg={3} md={4} key={p.id}>
                             <ProCard description={p.description} title={p.title} price={p.price} image={p.image}/>
                         </Col>
                     ))

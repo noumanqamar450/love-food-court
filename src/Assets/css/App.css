@@ -295,6 +295,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
   margin: 0px;
 }
 
+.pro-card .content .for-mobile {
+  display: none;
+}
+
 .pro-card .price {
   color: #fff;
   padding-bottom: 10px;
@@ -530,5 +534,22 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
 
   .semi-banner {
     display: none;
+  }
+
+  .pro-card { 
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .pro-card .body {
+    padding: 0px 15px;
+  }
+
+  .pro-card .content .for-all {
+    display: none;
+  }
+  
+  .pro-card .content .for-mobile {
+    display: block;
   }
 }
