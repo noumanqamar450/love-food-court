@@ -555,6 +555,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
   }
   
   .pro-card .content .for-mobile {
-    display: block;
+    display: none;
   }
 }
