@@ -540,6 +540,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
     display: grid;
     grid-template-columns: 40% 60%;
     position: relative;
+    overflow: hidden;
   }
 
   .pro-card .body {
@@ -557,12 +558,14 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
 
   .pro-card h5 {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: -35px;
     background: var(--successColor);
     padding: 6px 8px;
-    border-radius: 5px;
     font-size: 16px;
+    transform: rotate(315deg);
+    width: 140px;
+    text-align: center;
   }
 
   .pro-card .content .for-all {
