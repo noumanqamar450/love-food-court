@@ -44,7 +44,7 @@ function Header() {
                         >
                             <Nav.Link href="/">Home</Nav.Link>
                             <Nav.Link href="#menu">Menu</Nav.Link>
-                            <NavDropdown title="Restaurants" id="offcanvasNavbarDropdown-expand-lg" variant={theme} >
+                            <NavDropdown title="Brands" id="offcanvasNavbarDropdown-expand-lg" variant={theme} >
                                 <NavDropdown.Item href="#kfc">
                                     KFC
                                 </NavDropdown.Item>
