@@ -6,7 +6,7 @@ const FoodArea = () => {
         <div className="food-area">
             {
             Category.map(c => (
-                <ProCategory key={c.id} name={c.name} id={c.id} />
+                <ProCategory key={c.id} cate={c}/>
                 ))
             }
             

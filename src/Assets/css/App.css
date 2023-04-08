@@ -214,6 +214,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.sticky-top {
   height: 100%;
   transition: 0.5s;
 }
+
 .semi-banner .banner:hover img {
   transform: scale(1.1) rotate(2deg);
   opacity: 0.8;
